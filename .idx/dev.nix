@@ -3,17 +3,17 @@
 { pkgs, ... }: {
   # Which nixpkgs channel to use.
   channel = "stable-23.11"; # or "unstable"
-  packages = [ pkgs.python3 pkgs.libGL pkgs.xorg.libX11 pkgs.gcc8 ];
+  packages = [ pkgs.python3 pkgs.libGL pkgs.xorg.libX11 pkgs.gcc8 pkgs.bash ];
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
-    extensions = [ "ms-python.python" "ms-toolsai.jupyter"];
+    extensions = [ "ms-python.python" "ms-toolsai.jupyter=2024.12.3"];
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
         install =
           "python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt";
         # Open editors for the following files by default, if they exist:
-        default.openFiles = [ "README.md" "src/index.html" "main.py" ];
+        default.openFiles = [ "README.md" "math_fidget_spinner.ipynb" ];
       }; # To run something each time the workspace is (re)started, use the `onStart` hook
     };
   };
