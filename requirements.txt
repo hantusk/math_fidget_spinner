@@ -1,0 +1,17 @@
+jupyter-cadquery
+py_lib3mf
+build123d
+bd_warehouse @ git+https://github.com/gumyr/bd_warehouse
+cadquery-ocp
+numpy
+anytree
+trianglesolver
+ocpsvg
+svgpathtools
+scipy
+ezdxf
+pyparsing
+fonttools
+svgwrite
+ocp_vscode
+cadquery
