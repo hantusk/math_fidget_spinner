@@ -6,7 +6,7 @@
   packages = [ pkgs.python3 pkgs.libGL pkgs.xorg.libX11 pkgs.gcc8 pkgs.bash ];
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
-    extensions = [ "ms-python.python" "ms-toolsai.jupyter=2024.12.3"];
+    extensions = [ "ms-python.python" "ms-toolsai.jupyter"];
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {

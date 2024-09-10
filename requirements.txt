@@ -15,3 +15,6 @@ fonttools
 svgwrite
 ocp_vscode
 cadquery
+ipykernel
+ipywidgets
+
