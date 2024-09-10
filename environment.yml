@@ -1,0 +1,17 @@
+channels:
+ - conda-forge
+dependencies:
+  - cadquery
+  - anytree
+  - svgpathtools
+  - ocpsvg
+  - trianglesolver
+  - ipython
+  - ipywidgets
+  - jupyter
+  - pip
+  - pip:
+    - py_lib3mf
+    - build123d
+    - bd_warehouse @ git+https://github.com/gumyr/bd_warehouse
+    - jupyter-cadquery

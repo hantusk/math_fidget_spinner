@@ -1,0 +1,6 @@
+*.stl
+*.step
+*.3mf
+.vscode
+.env
+.DS_Store
